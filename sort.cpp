@@ -24,7 +24,7 @@ void bubbleSort(int array[], int n) {
 void selectionSort(int array[], int n) {
     int i, j, min_i;
 	for (int i = 0; i < n - 1; i++) {
-	    min_i = i;
+		min_i = i;
 		for (int j = i + 1; j < n; j++)
 			if (array[j] < array[min_i])
 				min_i = j;
@@ -49,10 +49,10 @@ int main (int argc, char** argv) {
 	printArray(array, n);
 
 	if (strcmp(argv[1], "selection")) {
-	    selectionSort(array, n);
-    } else if (strcmp(argv[1], "bubble")) {
-        bubbleSort(array, n);
-    }
+		selectionSort(array, n);
+    	} else if (strcmp(argv[1], "bubble")) {
+        	bubbleSort(array, n);
+    	}
 
 	std::cout << "Sorted: ";
 	printArray(array, n);
